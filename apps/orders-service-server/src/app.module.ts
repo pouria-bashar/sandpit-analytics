@@ -22,9 +22,12 @@ import { ConfigModule, ConfigService } from "@nestjs/config";
 import { GraphQLModule } from "@nestjs/graphql";
 import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
 
+import { LoggerModule } from "./logger/logger.module";
+
 @Module({
   controllers: [],
   imports: [
+    LoggerModule,
     KafkaModule,
     HealthModule,
     PrismaModule,

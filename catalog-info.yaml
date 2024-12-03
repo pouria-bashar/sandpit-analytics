@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Amplication-orders-service
+  description: Manages orders and related operations, capable of sending and receiving messages through Kafka.
+  labels:
+    vendor: "amplication"
+  annotations:
+    github.com/team-slug: "backstage/maintainers"
+    github.com/project-slug: "backstage/backstage"
+  tags:
+    - "Node.js"
+  links:
+    - url: https://server.amplication.com/cm45glvbr02gi1rig9hf6tcp8
+      title: Amplication Platform
+spec:
+  type: service
+  lifecycle: production
+  owner: development
